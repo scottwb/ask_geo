@@ -8,7 +8,7 @@ Ruby client library for the [AskGeo](http://www.askgeo.com/) web service. From t
 > Unlike GeoNames, look-ups are based on an actual map of the world, rather than "closest point of interest", which ensures accuracy and that you actually get a result for all locations. And unlike EarthTools, we return an actual time zone ID (e.g., "America/Los_Angeles") rather than just an offset. The API is also very fast: when used in batch mode, it is capable of returning thousands of results in a couple seconds.
 
 Contributing to ask_geo
-======================
+=======================
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it
@@ -17,6 +17,15 @@ Contributing to ask_geo
 * Commit and push until you are happy with your contribution
 * Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
 * Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
+
+Running the Tests
+=================
+
+In order to run the tests, you first need to edit `spec/spec_helper.rb` and follow the `TODO` comment to insert your AskGeo account ID and API key. Then, you should be able to run the tests with:
+
+```
+rake spec
+```
 
 Copyright
 =========
