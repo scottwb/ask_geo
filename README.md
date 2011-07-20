@@ -1,7 +1,9 @@
 askgeo
 ======
 
-Description goes here.
+Ruby client library for the (AskGeo)[http://www.askgeo.com/] web service.
+
+AskGeo provides a simple, fast, and accurate web api for finding out the time zone information for a given location (latitude and longitude). It's simple: you give latitude and longitude and the API returns a time zone ID (e.g., "America/Chicago", or "Europe/London").
 
 Contributing to askgeo
 ======================
