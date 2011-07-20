@@ -9,15 +9,6 @@ describe "AskGeo" do
       )
     end
 
-    it "should work over HTTPS" do
-      client = AskGeo.new(
-        :account_id => ASKGEO_ACCOUNT_ID,
-        :api_key    => ASKGEO_API_KEY,
-        :https      => true
-      )
-      client.lookup("47.62057,-122.349761")['timeZone'].should == 'America/Los_Angeles'
-    end
-
     it "should support points specified by comma-separated lat,lon string" do
       @client.lookup("47.62057,-122.349761")['timeZone'].should == 'America/Los_Angeles'
     end

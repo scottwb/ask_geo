@@ -4,21 +4,17 @@ require 'cgi'
 require 'json'
 
 class AskGeo
-  BASE_URL_HTTP  = "http://www.askgeo.com/api"
-  BASE_URL_HTTPS = "https://askgeoapi.appspot.com/api"
-
   class APIError < StandardError; end
 
-  attr_accessor :account_id, :api_key, :use_https
+  attr_accessor :account_id, :api_key
 
   def initialize(opts = {})
     @account_id = opts[:account_id]
     @api_key    = opts[:api_key]
-    @use_https  = opts[:https]
   end
 
   def base_url
-    use_https ? BASE_URL_HTTPS : BASE_URL_HTTP
+    "http://www.askgeo.com/api"
   end
 
   def serialize_point(point)
