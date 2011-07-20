@@ -7,7 +7,7 @@ Ruby client library for the [AskGeo](http://www.askgeo.com/) web service. From t
 >
 > Unlike GeoNames, look-ups are based on an actual map of the world, rather than "closest point of interest", which ensures accuracy and that you actually get a result for all locations. And unlike EarthTools, we return an actual time zone ID (e.g., "America/Los_Angeles") rather than just an offset. The API is also very fast: when used in batch mode, it is capable of returning thousands of results in a couple seconds.
 
-Contributing to askgeo
+Contributing to ask_geo
 ======================
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet

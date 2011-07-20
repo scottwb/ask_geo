@@ -14,8 +14,8 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
-  gem.name = "askgeo"
-  gem.homepage = "http://github.com/scottwb/askgeo"
+  gem.name = "ask_geo"
+  gem.homepage = "http://github.com/scottwb/ask_geo"
   gem.license = "MIT"
   gem.summary = %Q{Ruby client library for the AskGeo web service (http://www.askgeo.com)"}
   gem.description = %Q{Ruby client library for the AskGeo web service (http://www.askgeo.com). AskGeo provides a simple, fast, and accurate web api for finding out the time zone information for a given location (latitude and longitude)."}
@@ -43,7 +43,7 @@ Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "askgeo #{version}"
+  rdoc.title = "ask_geo #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
