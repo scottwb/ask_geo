@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "askgeo"
   gem.homepage = "http://github.com/scottwb/askgeo"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Ruby client library for the AskGeo web service (http://www.askgeo.com)"}
+  gem.description = %Q{Ruby client library for the AskGeo web service (http://www.askgeo.com). AskGeo provides a simple, fast, and accurate web api for finding out the time zone information for a given location (latitude and longitude)."}
   gem.email = "scottwb@gmail.com"
   gem.authors = ["Scott W. Bradley"]
   # dependencies defined in Gemfile
