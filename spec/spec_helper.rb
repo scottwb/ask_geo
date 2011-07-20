@@ -7,6 +7,12 @@ require 'ask_geo'
 # in ./support/ and its subdirectories.
 Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each {|f| require f}
 
+#
+# TODO: Update these with the values provided by askgeo.com for your account.
+#
+ASKGEO_ACCOUNT_ID = 'XXXXXX'
+ASKGEO_API_KEY    = 'XXXXXXXXXXXXXXXXXXXXXXXXXX'
+
 RSpec.configure do |config|
   
 end
