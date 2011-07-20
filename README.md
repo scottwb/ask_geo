@@ -24,3 +24,4 @@ Copyright
 Copyright (c) 2011 Scott W. Bradley. See LICENSE.txt for
 further details.
 
+AskGeo, GeoNames, and EarthTools are copyright/trademark their respective owners.
