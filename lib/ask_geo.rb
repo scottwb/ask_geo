@@ -14,7 +14,7 @@ class AskGeo
   end
 
   def base_url
-    "http://www.askgeo.com/api"
+    "http://api.askgeo.com/v1"
   end
 
   def serialize_point(point)
@@ -33,7 +33,7 @@ class AskGeo
   end
 
   def format_url(points)
-    "#{base_url}/#{account_id}/#{api_key}/timezone.json?points=#{CGI::escape(serialize_points(points))}"
+    "#{base_url}/#{account_id}/#{api_key}/query.json?points=#{CGI::escape(serialize_points(points))}&databases=Point,TimeZone"
   end
 
   def lookup(points)
