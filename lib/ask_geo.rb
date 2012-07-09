@@ -37,13 +37,20 @@ class AskGeo
   end
 
   def lookup(points)
-    response = JSON.parse(Net::HTTP.get URI.parse(format_url(points)))
+    begin
+      response = JSON.parse(Net::HTTP.get(URI.parse(format_url(points))))
+    rescue JSON::ParserError => e
+      raise APIError.new("Invalid server response : #{e.class} : #{e.message}")
+    end
+
     if response['code'] != 0
       raise APIError.new(response['message'] || 'Unknown server error')
     end
+
     data = response['data']
     data.size == 1 ? data.first : data
-  rescue JSON::ParserError
-    raise APIError.new("Invalid server response")
+
   end
+
 end
+
